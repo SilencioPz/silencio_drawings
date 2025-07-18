@@ -99,9 +99,14 @@ SilenciosDrawings/
     Suporte a tablets e modo paisagem
     -------------------------------------------------------------------------------------------------
     📌 Compatibilidade
-Mínima	Recomendada	Dependências Principais
-Android 8.0	Android 13+	androidx.compose.material3:1.2.1
-(API 26)	(API 33)	androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0
+    
+Mínima   	   Recomendada	   Dependências Principais
+
+Android 8.0	   Android 13+	   androidx.compose.material3:1.2.1
+
+(API 26)	      (API 33)	      androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0
+
 -------------------------------------------------------------------------------------------------
 👨‍💻 Desenvolvido com ❤️ e 🎨 por você!
+
 Apoio técnico dos parceiros DeepSeek e Claude! 🚀
