@@ -1,0 +1,46 @@
+# Build automático
+build/
+out/
+bin/
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# Arquivos do Gradle
+.gradle/
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+gradle-app.setting
+
+# Configurações locais
+local.properties
+*.keystore
+*.jks
+*.json
+
+# Arquivos do Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+captures/
+.navigation/
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.swp
+*.bak
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de usuário
+*.orig
+*.class
+
+# Arquivos de configuração personalizados
+.env
+*.env
