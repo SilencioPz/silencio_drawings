@@ -38,20 +38,35 @@ Aplicativo Android para desenho livre desenvolvido em Kotlin com:
 -------------------------------------------------------------------------------------------------
 
 📂 **Estrutura do Projeto**
+
 SilenciosDrawings/
+
 ├── app/
+
 │ ├── src/main/
+
 │ │ ├── java/com/example/silenciosdrawings/
+
 │ │ │ ├── components/ # ColorPalette, ToolsBar, ColorPickerDialog
+
 │ │ │ ├── models/ # DrawingState
+
 │ │ │ ├── ui/theme/ # Color, Theme, Type
+
 │ │ │ ├── utils/ # ImageUtils
+
 │ │ │ ├── viewmodels/ # DrawingViewModel
+
 │ │ │ ├── views/ # DrawingScreen
+
 │ │ │ └── MainActivity.kt # Ponto de entrada
+
 │ │ └── res/ # Ícones, cores e recursos visuais
+
 ├── build.gradle.kts # Configurações principais
+
 └── settings.gradle.kts # Configurações do projeto
+
 -------------------------------------------------------------------------------------------------
 ⚡ **Como Executar**
 
