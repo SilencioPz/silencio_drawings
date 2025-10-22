@@ -43,8 +43,6 @@ fun DrawingScreen(context: Context) {
     var canvasSize by remember { mutableStateOf(androidx.compose.ui.geometry.Size.Zero) }
     val backgroundImage: ImageBitmap? = null
 
-    val windowInsets = WindowInsets.systemBars
-
     val galleryLauncher = rememberLauncherForActivityResult(
         ActivityResultContracts.GetContent()
     ) { uri ->
@@ -82,7 +80,7 @@ fun DrawingScreen(context: Context) {
             modifier = Modifier
                 .fillMaxWidth()
                 .weight(1f)
-                .padding(bottom = windowInsets.getBottom(LocalDensity.current).dp)
+                .padding(bottom = 16.dp)
                 .pointerInput(Unit) {
                     detectDragGestures(
                         onDragStart = { offset ->
