@@ -50,7 +50,9 @@ fun DrawingScreen(context: Context) {
     }
 
     Column(
-        modifier = Modifier.fillMaxSize()
+        modifier = Modifier
+            .fillMaxSize()
+            .windowInsetsPadding(WindowInsets.systemBars)
     ) {
         Row(
             modifier = Modifier
