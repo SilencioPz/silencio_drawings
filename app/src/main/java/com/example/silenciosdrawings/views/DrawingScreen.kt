@@ -28,6 +28,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.IntSize
 import com.example.silenciosdrawings.R
@@ -41,6 +42,8 @@ fun DrawingScreen(context: Context) {
     var showColorPicker by remember { mutableStateOf(false) }
     var canvasSize by remember { mutableStateOf(androidx.compose.ui.geometry.Size.Zero) }
     val backgroundImage: ImageBitmap? = null
+
+    val windowInsets = WindowInsets.systemBars
 
     val galleryLauncher = rememberLauncherForActivityResult(
         ActivityResultContracts.GetContent()
@@ -60,7 +63,7 @@ fun DrawingScreen(context: Context) {
             horizontalArrangement = Arrangement.Center
         ) {
             Image(
-                painter = painterResource(id = R.drawable.silenciopz_logo),
+                painter = painterResource(id = R.drawable.silenciopz_logo2),
                 contentDescription = "Logo",
                 modifier = Modifier
                     .size(48.dp)
@@ -79,6 +82,7 @@ fun DrawingScreen(context: Context) {
             modifier = Modifier
                 .fillMaxWidth()
                 .weight(1f)
+                .padding(bottom = windowInsets.getBottom(LocalDensity.current).dp)
                 .pointerInput(Unit) {
                     detectDragGestures(
                         onDragStart = { offset ->

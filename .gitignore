@@ -1,46 +1,81 @@
-# Build automático
-build/
-out/
-bin/
+# --- Arquivos de IDE/Sistema ---
+*.iml
+.gradle
+.DS_Store
+*.swp
+*.swo
+*.log
+*.log.*
+*.bak
+*.tmp
+*.orig
+*~
+
+# --- Android Studio ---
+/.idea/
+!.idea/codeStyles/
+!.idea/copyright/
+/local.properties
+/captures/
+/output.json
+
+# --- Build/Compilação ---
 *.apk
+*.aab
 *.aar
 *.ap_
-*.aab
-
-# Arquivos do Gradle
-.gradle/
-!gradle-wrapper.jar
-!gradle-wrapper.properties
-gradle-app.setting
-
-# Configurações locais
-local.properties
-*.keystore
-*.jks
-*.json
-
-# Arquivos do Android Studio
-.idea/
-*.iml
-*.ipr
-*.iws
-captures/
-.navigation/
-
-# Logs e arquivos temporários
-*.log
-*.tmp
-*.swp
-*.bak
-
-# Sistema operacional
-.DS_Store
-Thumbs.db
-
-# Arquivos de usuário
-*.orig
+*.dex
 *.class
+**/bin/
+**/gen/
+**/out/
+**/build/
+**/production/
+**/.externalNativeBuild/
+**/.cxx/
+**/release/
+**/debug/
 
-# Arquivos de configuração personalizados
-.env
-*.env
+# --- Gradle ---
+!gradle-wrapper.properties
+gradle.properties
+
+# --- Ambiente/Configurações ---
+**/local_env/
+**/env/
+**/.env
+**/*.env
+**/keystore/
+**/*.keystore
+**/*.jks
+**/*.cert
+**/*.pfx
+
+# --- Outros ---
+**/fastlane/report.xml
+**/fastlane/Preview.html
+**/fastlane/screenshots
+**/fastlane/test_output
+**/.metadata
+**/.recommenders
+**/__pycache__/
+**/*.pyc
+**/node_modules/
+**/jspm_packages/
+**/web_modules/
+**/.cache/
+**/.nx/
+**/.npm/
+**/.yarn/
+
+# Arquivos específicos do Android
+google-services.json
+firebase-config.json
+
+# Mantenha o wrapper mas ignore arquivos temporários
+!gradle/wrapper/gradle-wrapper.jar
+.gradle/wrapper/dists/
+
+# Ignore tudo na pasta build exceto se for necessário
+build/
+!build/**/src/
